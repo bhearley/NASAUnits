@@ -5,10 +5,10 @@ setup(
     version='0.1.0',
     packages=find_packages(),
     install_requires=[
-        'numpy',
-        'pandas',
+        'json',
+        'response',
     ],
-    description='A Python module with numpy and pandas functions.',
+    description='A Python module for unit conversion with NASA GRC's Granta MI Database.',
     author='Brandon Hearley',
     author_email='brandon.l.hearley@nasa.gov',
     url='https://github.com/bhearley/NASAUnits',
