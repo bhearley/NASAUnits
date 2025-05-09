@@ -9,9 +9,9 @@ setup(
         'pandas',
     ],
     description='A Python module with numpy and pandas functions.',
-    author='Your Name',
-    author_email='you@example.com',
-    url='https://github.com/yourusername/myproject',
+    author='Brandon Hearley',
+    author_email='brandon.l.hearley@nasa.gov',
+    url='https://github.com/bhearley/NASAUnits',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
