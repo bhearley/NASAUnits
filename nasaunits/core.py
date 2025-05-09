@@ -1,9 +1,30 @@
-import numpy as np
-import pandas as pd
+def UnitConversion(source_unit, source_value, target_unit, admin_dir):
+    
+    # Import Modules
+    import requests
+    import json
+    import os
 
-def add_numbers(a, b):
-    return np.add(a, b)
+    # Load the library
+    url = 'https://raw.githubusercontent.com/yourusername/yourrepo/main/data/units.json'
+    response = requests.get(url)
+    
+    if response.status_code == 200:
+        U = response.json()  # Parse the JSON response
+    else:
+        U = None
+        
+    if U is not None:
 
-def create_dataframe(data):
-    """Create a pandas DataFrame from a dictionary."""
-    return pd.DataFrame(data)
+        # Convert to Global Variable
+        data = U[source_unit]
+        val = eval(data[0].replace('x', str(source_value)))
+        
+        data = U[target_unit]
+        target_val = eval(data[1].replace('x', str(val)))
+    
+        return target_val
+
+    else:
+        print('Error opening the unit library.')
+        return None
