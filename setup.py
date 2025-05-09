@@ -5,8 +5,7 @@ setup(
     version='0.1.0',
     packages=find_packages(),
     install_requires=[
-        'json',
-        'response',
+        'requests',
     ],
     description='A Python module for unit conversion with the NASA GRC Granta MI Database.',
     author='Brandon Hearley',
