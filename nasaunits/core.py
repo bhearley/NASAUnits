@@ -5,7 +5,7 @@ def UnitConversion(source_unit, source_value, target_unit):
     import json
 
     # Load the library
-    url = 'https://raw.githubusercontent.com/bhearley/NASAUnits/refs/heads/main/unit_library.json?token=GHSAT0AAAAAADDS7DM5TUTU3JYTOCU2JUMS2A6HMAA'
+    url = 'https://raw.githubusercontent.com/bhearley/NASAUnits/refs/heads/main/unit_library.json'
     response = requests.get(url)
     
     if response.status_code == 200:
