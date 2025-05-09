@@ -32,7 +32,7 @@ from nasaunits import UnitConversion
 ```
 
 2. Define Source Unit, Source Value, and Target Unit
-Source and Target Units must be strings present in the unit library. The unit library can be found and added to at: https://github.com/bhearley/NASAUnits/new/main/unit_library.json
+Source and Target Units must be strings present in the unit library. The unit library can be found and added to at: https://github.com/bhearley/NASAUnits/blob/main/unit_library.json
 
 ```bash
 source_unit = '°C'
