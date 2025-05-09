@@ -8,7 +8,7 @@ setup(
         'json',
         'response',
     ],
-    description='A Python module for unit conversion with NASA GRC's Granta MI Database.',
+    description='A Python module for unit conversion with the NASA GRC Granta MI Database.',
     author='Brandon Hearley',
     author_email='brandon.l.hearley@nasa.gov',
     url='https://github.com/bhearley/NASAUnits',
